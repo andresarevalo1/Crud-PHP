@@ -85,5 +85,3 @@ La API responde dependiendo del parámetro `action` enviado vía la solicitud GE
 | `delete` | POST | `id` | Elimina de forma permanente el registro. |
 
 ---
-
-*Desarrollado con pasión y dedicación para demostrar habilidades efectivas de desarrollo web.*
