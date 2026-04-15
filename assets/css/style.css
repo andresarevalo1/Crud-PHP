@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+body {
+    font-family: 'Outfit', 'Inter', sans-serif;
+    background: linear-gradient(-45deg, #0f172a, #1e293b, #334155, #0f172a);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    color: #e2e8f0;
+    min-height: 100vh;
+}
+
+@keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* Glassmorphism Card */
+.glass-card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 16px;
+    color: #f8fafc;
+    padding: 1rem;
+}
+
+/* Titles */
+h2.text-primary {
+    color: #38bdf8 !important;
+    text-shadow: 0 0 20px rgba(56, 189, 248, 0.4);
+    font-weight: 600;
+}
+
+/* Tables */
+.table {
+    color: #e2e8f0;
+}
+.table-dark {
+    background-color: rgba(15, 23, 42, 0.9);
+}
+.table-dark th {
+    border-bottom: 2px solid #38bdf8;
+    color: #f8fafc;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    color: #e2e8f0;
+    background-color: rgba(255, 255, 255, 0.02);
+}
+.table-hover>tbody>tr:hover>* {
+    color: #fff;
+    background-color: rgba(56, 189, 248, 0.15);
+    transition: all 0.3s ease;
+}
+
+td {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Buttons */
+.btn {
+    border-radius: 8px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: all 0.3s;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.btn-success {
+    background-color: #10b981;
+    border-color: #10b981;
+    box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+}
+.btn-success:hover {
+    background-color: #059669;
+    border-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(16, 185, 129, 0.6);
+}
+
+.btn-primary {
+    background-color: #38bdf8;
+    border-color: #38bdf8;
+    color: #0f172a;
+    box-shadow: 0 4px 15px rgba(56, 189, 248, 0.4);
+}
+.btn-primary:hover {
+    background-color: #0ea5e9;
+    border-color: #0ea5e9;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(56, 189, 248, 0.6);
+}
+
+.btn-warning {
+    background-color: #f59e0b;
+    border-color: #f59e0b;
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(245, 158, 11, 0.4);
+}
+.btn-warning:hover {
+    background-color: #d97706;
+    border-color: #d97706;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 158, 11, 0.6);
+}
+
+.btn-danger {
+    background-color: #ef4444;
+    border-color: #ef4444;
+    box-shadow: 0 4px 15px rgba(239, 68, 68, 0.4);
+}
+.btn-danger:hover {
+    background-color: #dc2626;
+    border-color: #dc2626;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(239, 68, 68, 0.6);
+}
+
+/* Modals */
+.modal-content {
+    background: rgba(30, 41, 59, 0.95) !important;
+    backdrop-filter: blur(20px) !important;
+    border: 1px solid rgba(255, 255, 255, 0.1) !important;
+    color: #f8fafc !important;
+    border-radius: 16px !important;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.8) !important;
+}
+.modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    background: transparent !important;
+}
+.modal-title {
+    color: #f8fafc !important;
+    font-weight: 600;
+}
+.modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.form-label {
+    color: #cbd5e1;
+    font-weight: 500;
+}
+.form-control {
+    background-color: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #fff;
+    border-radius: 8px;
+}
+.form-control:focus {
+    background-color: rgba(15, 23, 42, 0.8);
+    border-color: #38bdf8;
+    color: #fff;
+    box-shadow: 0 0 0 0.25rem rgba(56, 189, 248, 0.25);
+}
+
+/* Fix close button in dark mode */
+.btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
